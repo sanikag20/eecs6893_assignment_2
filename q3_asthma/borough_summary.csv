@@ -1,0 +1,6 @@
+borough,districts,median_district_rate,lowest_district_rate,highest_district_rate,districts_above_citywide,share_above_citywide_pct
+Bronx,12,234.1,151.8,326.9,12,100.0
+Manhattan,12,127.1,22.2,396.7,6,50.0
+Brooklyn,18,121.9,20.7,441.8,6,33.333333333333336
+Queens,14,92.05000000000001,37.2,159.2,2,14.285714285714286
+Staten Island,3,33.6,20.6,95.6,0,0.0

@@ -1,0 +1,60 @@
+year,GeoTypePretty,GeoTypeDesc,district_id,GeoRank,BoroID,borough,district,Area,visits,rate,above_citywide,rate_ratio,high_rate_and_volume
+2023,CD,Community District,206,6,1,Bronx,Belmont and East Tremont (CD6),Belmont and East Tremont (CD6)  Bronx,459,281.9,True,1.9617258176757133,True
+2023,CD,Community District,205,6,1,Bronx,Fordham and University Heights (CD5),Fordham and University Heights (CD5)  Bronx,535,223.5,True,1.5553235908141965,True
+2023,CD,Community District,204,6,1,Bronx,Highbridge and Concourse (CD4),Highbridge and Concourse (CD4)  Bronx,697,262.3,True,1.8253305497564372,True
+2023,CD,Community District,202,6,1,Bronx,Hunts Point and Longwood (CD2),Hunts Point and Longwood (CD2)  Bronx,243,244.7,True,1.7028531663187196,True
+2023,CD,Community District,207,6,1,Bronx,Kingsbridge Heights and Bedford (CD7),Kingsbridge Heights and Bedford (CD7)  Bronx,619,257.7,True,1.7933194154488519,True
+2023,CD,Community District,211,6,1,Bronx,Morris Park and Bronxdale (CD11),Morris Park and Bronxdale (CD11)  Bronx,352,201.8,True,1.4043145441892835,True
+2023,CD,Community District,203,6,1,Bronx,Morrisania and Crotona (CD3),Morrisania and Crotona (CD3)  Bronx,473,272.2,True,1.8942240779401531,True
+2023,CD,Community District,201,6,1,Bronx,Mott Haven and Melrose (CD1),Mott Haven and Melrose (CD1)  Bronx,585,326.9,True,2.2748782185107865,True
+2023,CD,Community District,209,6,1,Bronx,Parkchester and Soundview (CD9),Parkchester and Soundview (CD9)  Bronx,644,215.8,True,1.5017397355601951,True
+2023,CD,Community District,208,6,1,Bronx,Riverdale and Fieldston (CD8),Riverdale and Fieldston (CD8)  Bronx,202,151.8,True,1.0563674321503134,False
+2023,CD,Community District,210,6,1,Bronx,Throgs Neck and Co-op City (CD10),Throgs Neck and Co-op City (CD10)  Bronx,261,157.1,True,1.093249826026444,True
+2023,CD,Community District,212,6,1,Bronx,Williamsbridge and Baychester (CD12),Williamsbridge and Baychester (CD12)  Bronx,562,223.0,True,1.5518441196938066,True
+2023,CD,Community District,310,6,2,Brooklyn,Bay Ridge and Dyker Heights (CD10),Bay Ridge and Dyker Heights (CD10)  Brooklyn,70,34.7,False,0.24147529575504528,False
+2023,CD,Community District,303,6,2,Brooklyn,Bedford Stuyvesant (CD3),Bedford Stuyvesant (CD3)  Brooklyn,485,219.2,True,1.5254001391788448,True
+2023,CD,Community District,311,6,2,Brooklyn,Bensonhurst (CD11),Bensonhurst (CD11)  Brooklyn,109,36.6,False,0.2546972860125261,False
+2023,CD,Community District,312,6,2,Brooklyn,Borough Park (CD12),Borough Park (CD12)  Brooklyn,99,20.7,False,0.14405010438413363,False
+2023,CD,Community District,316,6,2,Brooklyn,Brownsville (CD16),Brownsville (CD16)  Brooklyn,627,441.8,True,3.07446068197634,True
+2023,CD,Community District,304,6,2,Brooklyn,Bushwick (CD4),Bushwick (CD4)  Brooklyn,215,125.6,False,0.8740431454418929,False
+2023,CD,Community District,313,6,2,Brooklyn,Coney Island (CD13),Coney Island (CD13)  Brooklyn,191,138.2,False,0.9617258176757133,False
+2023,CD,Community District,308,6,2,Brooklyn,Crown Heights and Prospect Heights (CD8),Crown Heights and Prospect Heights (CD8)  Brooklyn,233,205.0,True,1.4265831593597775,True
+2023,CD,Community District,317,6,2,Brooklyn,East Flatbush (CD17),East Flatbush (CD17)  Brooklyn,563,300.4,True,2.0904662491301322,True
+2023,CD,Community District,305,6,2,Brooklyn,East New York and Starrett City (CD5),East New York and Starrett City (CD5)  Brooklyn,763,252.3,True,1.7557411273486432,True
+2023,CD,Community District,314,6,2,Brooklyn,Flatbush and Midwood (CD14),Flatbush and Midwood (CD14)  Brooklyn,225,82.7,False,0.5755045233124566,False
+2023,CD,Community District,318,6,2,Brooklyn,Flatlands and Canarsie (CD18),Flatlands and Canarsie (CD18)  Brooklyn,350,118.2,False,0.8225469728601253,False
+2023,CD,Community District,302,6,2,Brooklyn,Fort Greene and Brooklyn Heights (CD2),Fort Greene and Brooklyn Heights (CD2)  Brooklyn,204,178.9,True,1.244954766875435,False
+2023,CD,Community District,301,6,2,Brooklyn,Greenpoint and Williamsburg (CD1),Greenpoint and Williamsburg (CD1)  Brooklyn,231,74.3,False,0.5170494084899095,False
+2023,CD,Community District,306,6,2,Brooklyn,Park Slope and Carroll Gardens (CD6),Park Slope and Carroll Gardens (CD6)  Brooklyn,122,100.3,False,0.697981906750174,False
+2023,CD,Community District,315,6,2,Brooklyn,Sheepshead Bay (CD15),Sheepshead Bay (CD15)  Brooklyn,106,39.2,False,0.27279053583855256,False
+2023,CD,Community District,309,6,2,Brooklyn,South Crown Heights and Lefferts Gardens (CD9),South Crown Heights and Lefferts Gardens (CD9)  Brooklyn,175,133.4,False,0.9283228949199723,False
+2023,CD,Community District,307,6,2,Brooklyn,Sunset Park (CD7),Sunset Park (CD7)  Brooklyn,148,81.1,False,0.5643702157272095,False
+2023,CD,Community District,110,6,3,Manhattan,Central Harlem (CD10),Central Harlem (CD10)  Manhattan,619,396.7,True,2.7606123869171886,True
+2023,CD,Community District,104,6,3,Manhattan,Clinton and Chelsea (CD4),Clinton and Chelsea (CD4)  Manhattan,76,99.8,False,0.6945024356297843,False
+2023,CD,Community District,111,6,3,Manhattan,East Harlem (CD11),East Harlem (CD11)  Manhattan,628,375.5,True,2.6130828114126654,True
+2023,CD,Community District,101,6,3,Manhattan,Financial District (CD1),Financial District (CD1)  Manhattan,36,74.8,False,0.5205288796102993,False
+2023,CD,Community District,102,6,3,Manhattan,Greenwich Village and Soho (CD2),Greenwich Village and Soho (CD2)  Manhattan,19,34.5,False,0.24008350730688938,False
+2023,CD,Community District,103,6,3,Manhattan,Lower East Side and Chinatown (CD3),Lower East Side and Chinatown (CD3)  Manhattan,263,165.0,True,1.1482254697286014,True
+2023,CD,Community District,105,6,3,Manhattan,Midtown (CD5),Midtown (CD5)  Manhattan,38,154.4,True,1.0744606819763398,False
+2023,CD,Community District,109,6,3,Manhattan,Morningside Heights and Hamilton Heights (CD9),Morningside Heights and Hamilton Heights (CD9)  Manhattan,219,187.5,True,1.3048016701461378,False
+2023,CD,Community District,106,6,3,Manhattan,Stuyvesant Town and Turtle Bay (CD6),Stuyvesant Town and Turtle Bay (CD6)  Manhattan,59,83.3,False,0.5796798886569242,False
+2023,CD,Community District,108,6,3,Manhattan,Upper East Side (CD8),Upper East Side (CD8)  Manhattan,48,22.2,False,0.15448851774530273,False
+2023,CD,Community District,107,6,3,Manhattan,Upper West Side (CD7),Upper West Side (CD7)  Manhattan,198,96.1,False,0.6687543493389005,False
+2023,CD,Community District,112,6,3,Manhattan,Washington Heights and Inwood (CD12),Washington Heights and Inwood (CD12)  Manhattan,350,160.9,True,1.119693806541406,True
+2023,CD,Community District,411,6,4,Queens,Bayside and Little Neck (CD11),Bayside and Little Neck (CD11)  Queens,62,37.6,False,0.26165622825330553,False
+2023,CD,Community District,404,6,4,Queens,Elmhurst and Corona (CD4),Elmhurst and Corona (CD4)  Queens,288,112.4,False,0.7821851078636048,False
+2023,CD,Community District,407,6,4,Queens,Flushing and Whitestone (CD7),Flushing and Whitestone (CD7)  Queens,204,67.7,False,0.47112038970076553,False
+2023,CD,Community District,408,6,4,Queens,Hillcrest and Fresh Meadows (CD8),Hillcrest and Fresh Meadows (CD8)  Queens,211,101.7,False,0.7077244258872653,False
+2023,CD,Community District,403,6,4,Queens,Jackson Heights (CD3),Jackson Heights (CD3)  Queens,258,103.8,False,0.7223382045929019,False
+2023,CD,Community District,412,6,4,Queens,Jamaica and Hollis (CD12),Jamaica and Hollis (CD12)  Queens,508,154.8,True,1.0772442588726516,True
+2023,CD,Community District,409,6,4,Queens,Kew Gardens and Woodhaven (CD9),Kew Gardens and Woodhaven (CD9)  Queens,217,92.2,False,0.6416144745998609,False
+2023,CD,Community District,401,6,4,Queens,Long Island City and Astoria (CD1),Long Island City and Astoria (CD1)  Queens,183,88.0,False,0.6123869171885874,False
+2023,CD,Community District,413,6,4,Queens,Queens Village (CD13),Queens Village (CD13)  Queens,269,106.2,False,0.7390396659707725,False
+2023,CD,Community District,406,6,4,Queens,Rego Park and Forest Hills (CD6),Rego Park and Forest Hills (CD6)  Queens,43,37.2,False,0.2588726513569938,False
+2023,CD,Community District,405,6,4,Queens,Ridgewood and Maspeth (CD5),Ridgewood and Maspeth (CD5)  Queens,171,69.8,False,0.48573416840640227,False
+2023,CD,Community District,414,6,4,Queens,Rockaway and Broad Channel (CD14),Rockaway and Broad Channel (CD14)  Queens,299,159.2,True,1.1078636047320807,True
+2023,CD,Community District,410,6,4,Queens,South Ozone Park and Howard Beach (CD10),South Ozone Park and Howard Beach (CD10)  Queens,175,91.9,False,0.6395267919276271,False
+2023,CD,Community District,402,6,4,Queens,Woodside and Sunnyside (CD2),Woodside and Sunnyside (CD2)  Queens,112,64.9,False,0.45163535142658323,False
+2023,CD,Community District,502,6,5,Staten Island,South Beach and Willowbrook (CD2),South Beach and Willowbrook (CD2)  Staten Island,71,33.6,False,0.2338204592901879,False
+2023,CD,Community District,501,6,5,Staten Island,St. George and Stapleton (CD1),St. George and Stapleton (CD1)  Staten Island,314,95.6,False,0.6652748782185108,False
+2023,CD,Community District,503,6,5,Staten Island,Tottenville and Great Kills (CD3),Tottenville and Great Kills (CD3)  Staten Island,51,20.6,False,0.1433542101600557,False
