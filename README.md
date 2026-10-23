@@ -1,10 +1,10 @@
 # EECS E6893: Big Data Analytics
 ## Homework 3: Data Visualization and Storytelling
 
-**Student:** [Sanika Gumaste]  
-**UNI:** [ssg2207]  
+**Student:** Sanika Gumaste
+**UNI:** ssg2207
 **Term:** Fall 2026  
-**Final report:** [ssg2207_Sanika_Gumaste_HW3.pdf]
+**Final report:** ssg2207_Sanika_Gumaste_HW3.pdf
 
 This submission covers D3 weather visualizations and periodic stock-price updates (Q1), a stock-monitoring data story (Q2), and a childhood-asthma data story for New York City (Q3).
 
