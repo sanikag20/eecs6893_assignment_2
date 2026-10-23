@@ -1,4 +1,4 @@
-# EECS E6893 — Big Data Analytics
+# EECS E6893: Big Data Analytics
 ## Homework 3: Data Visualization and Storytelling
 
 **Student:** [Sanika Gumaste]  
