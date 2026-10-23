@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HW3 — Stock Price Tracker</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 32px;
+      line-height: 1.6;
+      color: #0f172a;
+    }
+
+    main {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .notes {
+      max-width: 1000px;
+      color: #475569;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 9px 14px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      cursor: default;
+      opacity: 0.5;
+    }
+
+    #stock-status,
+    #stock-counts {
+      font-weight: bold;
+    }
+
+    #stock-errors {
+      color: #991b1b;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      border: 1px solid #cbd5e1;
+    }
+
+    table {
+      width: 100%;
+      min-width: 1050px;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    caption {
+      text-align: left;
+      padding: 12px;
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #e2e8f0;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    th {
+      background: #e2e8f0;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    .positive {
+      color: #166534;
+      font-weight: bold;
+    }
+
+    .negative {
+      color: #991b1b;
+      font-weight: bold;
+    }
+
+    .neutral {
+      color: #475569;
+      font-weight: bold;
+    }
+
+    @media print {
+      body {
+        margin: 0;
+      }
+
+      .controls,
+      .back-link {
+        display: none;
+      }
+
+      .table-wrapper {
+        overflow: visible;
+        border: 0;
+      }
+
+      table {
+        min-width: 0;
+        font-size: 10px;
+      }
+
+      th,
+      td {
+        padding: 5px;
+      }
+
+      tr {
+        break-inside: avoid;
+      }
+
+      * {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <p class="back-link">
+      <a href="index.html">Back to Seattle weather</a>
+    </p>
+
+    <h1>Stock Price Tracker</h1>
+
+    <div class="notes">
+      <p>
+        This page uses split-adjusted, end-of-day closing prices.
+        Each request searches through yesterday in New York and
+        compares the two most recent returned trading dates.
+      </p>
+
+      <p>
+        Change = latest daily close − previous trading close.
+        Green means an increase, red means a decrease, and gray
+        means no change. The signs and direction labels provide
+        the same information in text.
+      </p>
+
+      <p>
+        Each completed request is followed by a 90-second pause
+        before the next request. New rows are appended to the
+        history. Daily prices may repeat across refreshes.
+      </p>
+    </div>
+
+    <div class="controls">
+      <button id="pause-button" type="button">
+        Pause updates
+      </button>
+
+      <button id="download-button" type="button" disabled>
+        Download evidence JSON
+      </button>
+    </div>
+
+    <p id="stock-status" aria-live="polite">
+      Preparing the first request...
+    </p>
+
+    <p id="stock-schedule"></p>
+
+    <p id="stock-counts">
+      Successful cycles: 0 | Rows: 0
+    </p>
+
+    <p id="stock-window" class="notes"></p>
+
+    <pre id="stock-errors" hidden></pre>
+
+    <div class="table-wrapper">
+      <table>
+        <caption>
+          Acquisition history — prices in USD; retrieval times in UTC
+        </caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Cycle</th>
+            <th scope="col">Retrieved (UTC)</th>
+            <th scope="col">Ticker</th>
+            <th scope="col">Latest date (ET)</th>
+            <th scope="col">Latest close (USD)</th>
+            <th scope="col">Previous date (ET)</th>
+            <th scope="col">Previous close (USD)</th>
+            <th scope="col">Change (USD)</th>
+            <th scope="col">Change (%)</th>
+          </tr>
+        </thead>
+
+        <tbody id="stock-history"></tbody>
+      </table>
+    </div>
+
+    <p class="notes">
+      Data source:
+      <a href="https://massive.com/docs/rest/stocks/aggregates/custom-bars">
+        Massive daily stock aggregates
+      </a>.
+      Download your evidence before closing or reloading this page;
+      the displayed history is held in browser memory.
+    </p>
+  </main>
+
+  <script src="stocks.js"></script>
+</body>
+</html>

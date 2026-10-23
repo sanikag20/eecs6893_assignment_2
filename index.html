@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HW3 - Seattle Weather</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    line-height: 1.6;
+  }
+
+  .histogram-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .histogram-grid h2 {
+    font-size: 18px;
+  }
+
+  .histogram-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+  }
+
+  .histogram-controls select {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+
+  #histogram-summary {
+    color: #475569;
+  }
+
+  .observations {
+    max-width: 1000px;
+    margin-top: 32px;
+  }
+
+  .observations p {
+    font-size: 16px;
+    color: #334155;
+    text-indent: 1.5em;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+
+  /* Stack the static histograms on narrow screens. */
+  @media (max-width: 1000px) {
+    .histogram-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+</style>
+</head>
+
+<body>
+  <h1>Seattle Weather: 2012-2015</h1>
+
+  <p id="status">Loading the weather data...</p>
+  <div class="histogram-grid">
+    <section>
+        <h2>Wind distribution: 10 equal-width bins</h2>
+        <svg id="wind-10"></svg>
+    </section>
+
+    <section>
+        <h2>Wind distribution: 20 equal-width bins</h2>
+        <svg id="wind-20"></svg>
+    </section>
+  </div>
+
+<section>
+  <h2>Weather categories: share of all days</h2>
+  <svg id="weather-pie"></svg>
+</section>
+
+<section>
+  <h2>Daily precipitation: 2012–2015</h2>
+  <svg id="precipitation-line"></svg>
+</section>
+
+<section>
+  <h2>Explore the weather distributions</h2>
+
+  <div class="histogram-controls">
+    <label for="histogram-variable">Variable:</label>
+
+    <select id="histogram-variable">
+      <option value="precipitation">Precipitation</option>
+      <option value="temp_max">Maximum temperature</option>
+      <option value="temp_min">Minimum temperature</option>
+      <option value="wind" selected>Wind</option>
+    </select>
+
+    <label for="histogram-bins">Number of bins:</label>
+
+    <select id="histogram-bins">
+      <option value="5">5</option>
+      <option value="10" selected>10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+      <option value="25">25</option>
+    </select>
+  </div>
+
+  <h3 id="histogram-title"></h3>
+
+  <p id="histogram-summary" aria-live="polite"></p>
+
+  <svg id="histogram-dynamic"></svg>
+</section>
+<section class="observations">
+  <h2>Observations on the full 2012–2015 dataset</h2>
+
+  <p>
+    Across the 1,461 days, 1,287 (88.1%) have wind values at or below 5 source units. The ten-bin and twenty-bin histograms use identical observations and horizontal limits, but the twenty-bin version splits each wider interval in two and reveals finer local variation. In the weather pie, rain (641 days) and sun (640) together account for 87.7% of days; snow is least common with 26 days. The precipitation series has 838 zero-precipitation days, while the highest recorded daily value is 55.9 on March 15, 2015.
+  </p>
+
+  <p>
+    The interactive histogram makes it possible to inspect how precipitation, maximum temperature, minimum temperature, and wind differ in shape and range. Changing from ten to twenty-five bins reorganizes the same 1,461 observations into narrower groups; it does not change the data or sample size. Keeping the chosen bin count when switching variables helps readers compare distributions consistently, while retaining both static wind charts makes the original bin-width comparison easy to revisit.
+  </p>
+
+
+</section>
+
+<p>
+  Data source:
+  <a href="https://raw.githubusercontent.com/vega/vega/main/docs/data/seattle-weather.csv">
+    Seattle weather dataset from Vega
+  </a>.
+</p>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="q1.js"></script>
+</body>
+</html>
